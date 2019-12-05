@@ -8,5 +8,6 @@
 #include "WiFi.cc"
 #include "Wire.cc"
 #include "SPI.cc"
+#include "Print.cc"
 
 #include "IRremote.cc"

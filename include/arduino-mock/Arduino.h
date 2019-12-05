@@ -4,7 +4,12 @@
 #ifndef ARDUINO_H
 #define ARDUINO_H
 
+#ifndef PROGMEM
+#define PROGMEM
+#endif
+
 #include <stdint.h>
+class __FlashStringHelper;
 
 #ifdef __cplusplus
 extern "C" {

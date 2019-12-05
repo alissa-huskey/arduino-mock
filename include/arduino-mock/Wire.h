@@ -22,6 +22,9 @@ class Wire_ {
     uint8_t write(uint8_t);
     uint8_t write(char*);
     uint8_t write(uint8_t, uint8_t);
+    uint8_t send(uint8_t);
+    uint8_t send(char*);
+    uint8_t send(uint8_t, uint8_t);
     uint8_t available(void);
     uint8_t read(void);
     void onReceive(uint8_t*);
@@ -39,7 +42,8 @@ class Wire_ {
       return write((uint8_t)n);
     }
 };
-extern Wire_ Wire;
+class TwoWire : public Wire_ {};
+extern TwoWire Wire;
 
 class WireMock {
   public:

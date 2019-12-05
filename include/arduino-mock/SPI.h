@@ -36,7 +36,8 @@ class SPI_ {
     void detachInterrupt();
 };
 
-extern SPI_ SPI;
+class SPIClass : public SPI_ {};
+extern SPIClass SPI;
 
 class SPIMock {
   public:

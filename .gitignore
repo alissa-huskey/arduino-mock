@@ -1,7 +1,8 @@
 # Ignore editor backup/temps
 *~
 *.bak
-*.swp
+*.sw*
+.tags
 
 # Compiled Object files
 *.slo

@@ -48,6 +48,18 @@ uint8_t Wire_::write(uint8_t a, uint8_t b) {
   return p_WireMock->write(a, b);
 }
 
+uint8_t Wire_::send(uint8_t a) {
+  return p_WireMock->write(a);
+}
+
+uint8_t Wire_::send(char* a) {
+  return p_WireMock->write(a);
+}
+
+uint8_t Wire_::send(uint8_t a, uint8_t b) {
+  return p_WireMock->write(a, b);
+}
+
 uint8_t Wire_::available(void) {
   return p_WireMock->available();
 }
@@ -77,4 +89,4 @@ uint8_t Wire_::requestFrom(uint8_t a, uint8_t b, uint8_t c) {
 }
 
 // Preinstantiate Objects
-Wire_ Wire;
+TwoWire Wire;
